@@ -21,11 +21,9 @@ logger.addHandler(stream_handler)
 logger.addHandler(file_handler)
 
 if __name__ == '__main__':
-    binance = BinanceFuturesClient("DGAl2cg0EZJLcYRcComAk9yxcMbiCb8dhkwfaBQLXYLpcgfEda3ejZWJASLl5EtM",
-                                   "Isfsn4ZNEVjpkZtJB4qw2urMwwf9kEtARxBQnrWTu8MJ6zHrv0wiS6rxPF9EchV4", True)
+    binance = BinanceFuturesClient(True)
 
-    bitmex = BitmexClient("DGAl2cg0EZJLcYRcComAk9yxcMbiCb8dhkwfaBQLXYLpcgfEda3ejZWJASLl5EtM",
-                          "Isfsn4ZNEVjpkZtJB4qw2urMwwf9kEtARxBQnrWTu8MJ6zHrv0wiS6rxPF9EchV4", True)
+    bitmex = BitmexClient(True)
 
     root = Root(binance, bitmex)
     root.mainloop()

@@ -1,5 +1,6 @@
 import tkinter as tk
 import typing
+import tkmacosx as tkmac
 
 from interface.stytling import *
 
